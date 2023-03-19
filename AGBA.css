@@ -1,11 +1,87 @@
-h5{
-    font-size: 28px;
-    color: blueviolet;
+@import url('https://fonts.googleapis.com/css2?family=Puppies+Play&family=Quicksand:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-button{
-    background-color: aqua;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 8px;
-    margin: 8px 500px;
+body{
+    background: rebeccapurple;
 }
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(1){
+    color: azure;
+}
+section:nth-child(2){
+    color: rgb(229, 237, 237);
+    background: blue;
+}
+ 
+section:nth-child(3){
+    color: rgb(229, 237, 237);
+    background: rgb(0, 255, 34);
+}
+
+section:nth-child(4){
+    color: rgb(229, 237, 237);
+    background: brown;
+}
+
+section .container{
+    margin: 100px;
+}
+
+section h1{
+    font-size: 60px;
+}
+
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .cards{
+    display: flex;
+}
+
+
+section .cards .text-card{
+    background: grey;
+    margin: 20px;
+    padding: 60px;
+}
+section .cards .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 960px){
+    section h1{
+        font-size: 50px;
+        color: blue;
+    }
+    
+    section .cards{
+        flex-direction: column;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
