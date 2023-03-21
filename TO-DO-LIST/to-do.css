@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    color: greenyellow;
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+.todo-list{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #fff;
+}
+.list-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20p;
+}
+.entered-list{
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+.add-list{
+    border: none;
+    border-radius: 5px;
+    background-color: greenyellow;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    margin: 3px;
+    opacity: 6;
+    pointer-events: none;
+}
+.add-list.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.task{
+    width: 100%;
+    margin-top: 30px;
+}
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item p{
+    font-size: 16px;
+    font-weight: 500;
+    color: red;
+    letter-spacing: 2px;
+}
+.item-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.item-btn i{
+    color: green;
+    font-size: 15px;
+    cursor: pointer;
+}
+.item.completed p{
+    text-decoration: line-through;
+    color: black;
+}
+p{
+    font-size: 16px;
+    font-weight:900px;
+}
+span{
+    color: white;
+}
